@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanchard - благодарим Вас за обратную связь!</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .feedback__container {
+      display: block;
+      padding: 150px;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+    }
+    .feedback__content {
+      text-align: center;
+      width: 650px;margin: 0 auto;
+      padding: 50px;color: #333333;
+      background-color: #ffffff;border-radius: 50px;
+      box-shadow: 0 0 10px;
+      opacity: 0.75;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .feedback__container {
+        padding: 100px 0;
+        margin: 0 auto;
+      }
+      .feedback__content {
+        max-width: 768px;
+      }
+
+      .feedback__redirect span {
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .feedback__container {
+        padding: 100px 0;
+        margin: 0 auto;
+      }
+      .feedback__content {
+        max-width: 280px;
+      }
+
+      .feedback__redirect span {
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+  </style>
+</head>
+<body style="background-image: url('img/publication-bg.jpg'); background-size: cover;">
+  <div class="feedback__container">
+    <div class="feedback__content">
+      <h2 class="feedback__title">
+        Благодарим Вас за обратную связь!
+      </h2>
+      <p class="feedback__discription">
+        Наш специалист ответит Вам в течении 10 минут!
+      </p>
+      <div class="feedback__redirect" style="  color: #fff;padding: 15px;background-color: #333;border-radius: 10px;">
+      <span>Не хотите ждать?</span> <a class="feedback__url" href="/index.html">Вернуться на главную страницу</a>
+    </div>
+    </div>
+</div>
+<script type="text/javascript">
+  setTimeout('location.replace("/index.html")', 3000);
+  </script>
+</body>
+</html>
